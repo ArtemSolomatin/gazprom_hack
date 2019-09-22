@@ -1,0 +1,48 @@
+{% extends "bootstrap/base.html" %}
+
+{% block head %}
+    {{ super() }}
+    <title>{% block title %}{% endblock %} - Application</title>
+{% endblock %}
+
+{%block content%}
+
+<form action="" method=post enctype=multipart/form-data>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="col-md-4 col-md-offset-4">
+        <hr>
+            <h3 class="text-info">Загрузите csv файл с результатами замеров</h3>
+            <p>Наша система предскажет наличие и глубину залежей нефти</p>
+
+            <div class="box">
+
+              <form action="#" method="post" class="text-center">
+                <div class="margin-bottom-20">
+                  <img class="thumbnail box-center margin-top-2" alt="No image" src="../static/upload.png" width="100" height="100" align="center">
+                </div>
+              </form>
+
+              <div class="row">
+                <div class="col-sm-8">
+                  <span class="control-fileupload">
+                    <label for="file"  class="text-left">Пожалуйста, выберете файл</label>
+                    <input type="file" id="file" name="file">
+                  </span>
+                </div>
+                <div class="col-sm-4">
+                  <input type=submit class="btn btn-primary btn-block">
+                    <i class="icon-upload icon-white"></i>
+                </div>
+              </div>
+            </div>
+        <hr>
+    </div>
+</form>
+
+{%endblock %}

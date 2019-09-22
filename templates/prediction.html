@@ -1,0 +1,15 @@
+{% extends "bootstrap/base.html" %}
+
+{%block content%}
+
+<form action="" method=post enctype=multipart/form-data>
+    <div>
+        <iframe src="../static/{{ graph }}" width="1200" height="750" align="center">
+        Ваш браузер не поддерживает плавающие фреймы!
+        </iframe>
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary" style="float: right;">Назад</button>
+</form>
+
+{%endblock %}
